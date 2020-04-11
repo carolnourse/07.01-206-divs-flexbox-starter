@@ -99,15 +99,38 @@ textarea {
 html {
   background-color: #fff;
   height: 100%;
+  background: url('../img/bkgd-4.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 body {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Lora', serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   height: 100%;
-  background: url('../img/bkgd-3.png') no-repeat center center fixed;
-  background-size: cover;
+}
+
+header, footer, main {
+    display: flex;
+    color: #748d8c;
+    background-color: #fceacf;
+    padding: 15px;
+    border: 1px solid #fb386f;
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+}
+
+header {
+  font-size: 4rem;
+}
+
+main {
+  font-size: 1.5rem;
+}
+
+main span {
+  font-family: 'Playfair Display', serif;
 }
 
 .wrapper {
@@ -115,27 +138,34 @@ body {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-  border: 1px 0 solid white;
+  flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #748d8c;
   line-height: 1.5em;
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   background-color: #fceacf;
-  height: 300px;
+  height: auto;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
-  padding: 0 15px;
+  padding: 15px;
   font-weight: normal;
   border: 1px solid #fb386f;
 }
 
+.i {
+  display: flex;
+  flex-flow: row nowrap;
+}
 
-
+.fab {
+  flex-basis: 2%;
+  font-size: 1.25rem;
+}
 
 /* ==========================================================================
    Helper classes
